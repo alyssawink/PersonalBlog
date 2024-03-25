@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Blog</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <form>
-        <h2>What's on your mind?</h2>
-        <div>
-            <label>Username</label>
-            <input id="username"></input>
+    <header class="header">
+        <h1 class="no banner"></h1>
+        <div class="botton-group">
+            <div class="bx bx-circle" id="dark-mode-toggle"><span class="animate" style="--i:2;"></span></div>
         </div>
-        <div>
-            <label>Title</label>
-            <input id="title"></input>
+    </header>
+    
+    <section class="page" id="page">
+        <div class="center-line"></div>
+        <div class="display-container">
+            <div class="display">
+                <img src="/assets/images/Screenshot 2024-03-23 at 7.46.16 PM.png" alt="Gradient yellow circle with the words'My First Blog' displayed inside" class="display-img">
+            </div>
         </div>
-        <div>
-            <label>Content</label>
-            <textarea id="content"></textarea>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
+
+        <section class="blog-section" id="blog-section">    
+            <h2 class="heading">What's on your mind?</h2>
+            <form id="blog-form" action="#" method="POST">
+                <div class="input-label">
+                    <p class="inquiry">
+                    <label>Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required></input>
+                    </p>
+
+                    <p class="inquiry"></p>
+                    <label>Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter your post title" required></input>
+                    </p>
+
+                    <p class="inquiry">
+                    <label>Content</label>
+                    <textarea id="content" name="content" form="contentform" placeholder="Write your post content here" required></textarea>
+                    </p>
+
+                    <p class="button-box">
+                        <button type="submit" class="button">Submit</button>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text"></div>
+    </footer>
+    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/logic.js"></script>
 </body>
 </html>
