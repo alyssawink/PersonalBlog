@@ -9,9 +9,9 @@ Created a double blog page using html, css, and javascript. The main page allows
 
 
 ## URLs
-[](https://github.com/alyssawink/PersonalBlog)
+https://github.com/alyssawink/PersonalBlog
 
-[](https://alyssawink.github.io/PersonalBlog/index.html)
+https://alyssawink.github.io/PersonalBlog/index.html
 
 ## Author
 Alyssa Hanewinkel
