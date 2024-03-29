@@ -3,7 +3,7 @@
     --second-bg-color: #f3f0f0;
     --text-color: #0e0b0b;
     --main-color: #f8f7f5;
-    --background-img-light: url('my-blogpix-lm.png')
+    /*--background-img-light: url('assets/images/my-first-blog.png');*/
 }
 
 .darkMode { /* To switch between light and dark mode*/
@@ -97,13 +97,13 @@ textarea {
     cursor: pointer;
 }
 
-.center-line { /* adjust the double centerline */
+.center-line {
     position: absolute;
     left: 50%;
     top: 91px;
     bottom: -425px;
     width: 0;
-    border-left: 12px double black; /* adjust thickness and color as required */
+    border-left: 12px double black;
     content: '';
 }
 
@@ -120,13 +120,16 @@ textarea {
 .display-container {
     margin: 50px auto;
     width: 100%;
-    text-align: left;
+    text-align: center;
     flex-wrap: wrap;
     min-height: calc(80vh - 80px);
 }
 
-.display-img {
+.display img {
     max-width: 100%;
+    /*background-color: #f3f0f0; /* Light background color */
+    padding: 20px;
+    color: #000000; /* Light text color */
 } 
 
 footer h3 {
@@ -136,5 +139,17 @@ footer h3 {
     padding: 0px 0px;
     background: var(--second-bg-color);
 }
+
+.container {
+    width: 100%; /* Example width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* CSS for smaller screens */
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 100%; /* Full width for smaller screens */
+    }
+  }
 
 

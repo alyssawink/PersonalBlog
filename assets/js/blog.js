@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const blogList = document.getElementById("blog-list");
+    const blogList = document.getElementById("blogPost");
 
     function getBlogPostsFromLocalStorage() {
         return JSON.parse(localStorage.getItem("posts")) || [];
